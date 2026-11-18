@@ -67,7 +67,7 @@ h1,h2,h3,h4{margin:0}
 /* видео 3:16 */
 .video{padding:56px 0 8px}
 .ekran{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.ekran video{display:block;width:100%;height:100%;object-fit:cover}
+.ekran img,.ekran iframe{display:block;width:100%;height:100%;object-fit:cover;border:0}
 .ekran .pusk{all:unset;cursor:pointer;position:absolute;inset:0;display:flex;align-items:flex-end;padding:28px;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 45%)}
 .ekran .pusk span{display:inline-flex;align-items:center;gap:14px;font:700 19px/1.2 'Sofia Sans';color:#fff}
 .ekran .pusk b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--ak)}
@@ -203,6 +203,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   .lenta.v3{grid-template-columns:1fr 1fr}
   .ekran .pusk{padding:16px}
   .ekran .pusk b{width:52px;height:52px}
+  .ekran .pusk span span{display:none}
   .rilsy .sh{display:block}
   .rilsy .sh p{margin-top:6px}
 }
@@ -240,7 +241,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       <p class="fraza">Наука, управление и развитие человеческого потенциала.</p>
       <p class="lid">Развивает научные и образовательные проекты на стыке экономики, управления и социальных наук. В центре внимания - человеческий потенциал, качество жизни и устойчивость организаций, территорий и общества.</p>
       <div class="knopki">
-        <a class="b ak" href="#video" onclick="pusk();return true"><span class="tr"></span>Смотреть видео <small>3 мин 16 сек</small></a>
+        <a class="b ak" href="#video" onclick="pusk();return true"><span class="tr"></span>Смотреть видео <small>10 мин 32 сек</small></a>
         <a class="b" href="#contacts">Обсудить сотрудничество</a>
       </div>
       <div class="knopki svyaz">
@@ -253,12 +254,12 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   </div>
 </section>
 
-<section class="video w" id="video" aria-label="Видео с Дмитрием Бобровым, 3 минуты 16 секунд">
-  <div class="ekran">
-    <video id="vid" playsinline preload="none" poster="v/bobrov.jpg" src="v/bobrov.mp4"></video>
-    <button class="pusk" id="pusk" onclick="pusk()" aria-label="Смотреть видео"><span><b></b><span>Дмитрий Бобров<small>Видео · 3 мин 16 сек</small></span></span></button>
+<section class="video w" id="video" aria-label="Видео: Почему одни растут, а другие боятся начать, 10 минут 32 секунды">
+  <div class="ekran" id="ekran">
+    <img src="v/rastut.jpg" alt="Дмитрий Бобров в студии" width="1600" height="900">
+    <button class="pusk" id="pusk" onclick="pusk()" aria-label="Смотреть видео"><span><b></b><span>Почему одни растут, а другие боятся начать<small>Видео · 10 мин 32 сек</small></span></span></button>
   </div>
-</section>
+  </section>
 
 <!-- 01 Институт -->
 <section class="razdel" id="institute" aria-labelledby="institute-title">
@@ -509,8 +510,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
 </main>
 
 <script>
-function pusk(){var v=document.getElementById('vid'),b=document.getElementById('pusk');if(b)b.style.display='none';v.controls=true;v.play().catch(function(){})}
-document.getElementById('vid').addEventListener('play',function(){var b=document.getElementById('pusk');if(b)b.style.display='none'});
+function pusk(){var e=document.getElementById('ekran');if(e.querySelector('iframe'))return;e.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/Z5o-Z06S4s0?autoplay=1&rel=0&playsinline=1" title="Почему одни растут, а другие боятся начать" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>'}
 document.querySelectorAll('.ril').forEach(function(k){k.addEventListener('click',function(){
   if(k.classList.contains('idet'))return;
   document.querySelectorAll('.ril.idet video').forEach(function(v){v.pause()});
