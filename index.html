@@ -10,7 +10,7 @@
 <meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://ilin20vek.github.io/bobrov-sayt/">
 <meta property="og:title" content="Дмитрий Викторович Бобров - директор Института социально-экономических наук РГГУ">
-<meta property="og:description" content="Наука, управление и развитие человеческого потенциала.">
+<meta property="og:description" content="Смыслы ждут решений!">
 <meta property="og:image" content="https://ilin20vek.github.io/bobrov-sayt/i/og.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -51,8 +51,27 @@ h1,h2,h3,h4{margin:0}
 .titr{border-left:3px solid var(--ak);padding:2px 0 2px 16px;margin:0 0 26px}
 .titr p{margin:0;font:700 20px/1.3 'Sofia Sans';color:var(--tx)}
 .titr p+p{font-weight:400;color:var(--mut);margin-top:4px}
-.fraza{font:italic 400 clamp(26px,2.6vw,34px)/1.18 var(--sr);color:var(--ak2);margin:0 0 20px}
-.afisha .lid{color:var(--tx2);max-width:34em;margin:0 0 30px}
+.fraza{font:italic 400 clamp(28px,2.8vw,38px)/1.18 var(--sr);color:var(--ak2);margin:0 0 14px}
+.regalii{list-style:none;margin:0 0 28px;padding:0;max-width:35em}
+.regalii li{position:relative;padding:0 0 0 22px;margin:0 0 8px;color:var(--tx2);font-size:17px;line-height:1.45}
+.regalii li:before{content:"";position:absolute;left:0;top:.68em;width:10px;height:2px;background:var(--ak)}
+
+/* три цифры */
+.cifry{padding:48px 0 0}
+.cifry .w{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cifry article{background:var(--pl);border-radius:16px;padding:24px 24px 22px;border-top:2px solid var(--ak)}
+.cifry b{display:block;font:800 clamp(46px,5vw,66px)/1 var(--hd);color:var(--ak);margin-bottom:10px}
+.cifry span{display:block;font:700 19px/1.3 'Sofia Sans';color:var(--tx)}
+
+/* текстовый блок: заголовок слева, текст справа */
+.blok{margin-top:72px;padding-top:48px;border-top:1px solid var(--li);display:grid;grid-template-columns:1fr 2fr;gap:clamp(28px,5vw,64px);align-items:start}
+.blok p:last-child{margin-bottom:0}
+.punkty{list-style:none;margin:0;padding:0}
+.punkty li{position:relative;padding:14px 0 14px 24px;border-top:1px solid var(--li);color:var(--tx2)}
+.punkty li:before{content:"";position:absolute;left:0;top:25px;width:8px;height:8px;border-radius:50%;background:var(--ak)}
+.punkty.dva{columns:2;column-gap:40px}
+.punkty.dva li{break-inside:avoid}
+.lipkoe{position:sticky;top:84px}
 .knopki{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .b{display:inline-flex;align-items:center;gap:10px;background:#2c2c2e;color:var(--tx);border:0;border-radius:999px;padding:12px 20px;text-decoration:none;font:700 16px/1.1 'Sofia Sans';cursor:pointer;white-space:nowrap}
 .b:hover{background:#3a3a3c}
@@ -152,6 +171,12 @@ figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;f
 .hronika time{display:block;font:800 34px/1 var(--hd);color:var(--tx);margin-bottom:8px}
 .hronika h3{font:700 17px/1.3 'Sofia Sans';color:var(--ak2);margin:0 0 6px}
 .hronika p{font-size:16px;line-height:1.4;color:var(--mut);margin:0}
+.hronika.v3{grid-template-columns:repeat(3,1fr);margin-top:12px}
+.hronika.v3 p{color:var(--tx2)}
+.lenta.v2{grid-template-columns:1fr 1fr;margin-top:0}
+.yak{margin-top:48px;align-items:center;grid-template-columns:1fr 1.5fr}
+.stopka{display:grid;gap:22px}
+.kartochki.k4{grid-template-columns:repeat(4,1fr)}
 .segodnya{margin-top:56px;background:var(--pl);border-radius:18px;padding:28px 30px;border-left:3px solid var(--ak)}
 .segodnya .lead{margin:0}
 .sport{margin-top:96px}
@@ -177,8 +202,10 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   .afisha .portret{position:relative;width:100%;height:auto;aspect-ratio:4/5;max-height:72svh;object-position:50% 16%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 30%);mask-image:linear-gradient(to top,transparent 0,#000 30%)}
   .afisha .svet{background:radial-gradient(80% 45% at 50% 20%,rgba(255,106,0,.30),transparent 70%)}
   .afisha .w{margin-top:-90px;padding-top:0;padding-bottom:48px}
-  .dv,.ideya{grid-template-columns:1fr}
-  .kartochki{grid-template-columns:1fr 1fr}
+  .dv,.ideya,.blok,.yak{grid-template-columns:1fr}
+  .kartochki,.kartochki.k4{grid-template-columns:1fr 1fr}
+  .lipkoe{position:static}
+  .punkty.dva{columns:1}
   .polosa{grid-template-columns:repeat(4,1fr)}
   .hronika{grid-template-columns:repeat(3,1fr);row-gap:40px}
   .lenta{grid-template-columns:1fr 1fr}
@@ -192,7 +219,14 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   h2{margin-bottom:28px}
   .afisha h1{font-size:clamp(52px,15vw,72px)}
   .titr p{font-size:18px}
-  .kartochki{grid-template-columns:1fr}
+  .kartochki,.kartochki.k4{grid-template-columns:1fr}
+  .cifry .w{grid-template-columns:1fr;gap:10px}
+  .cifry article{display:flex;align-items:baseline;gap:14px;padding:18px 20px}
+  .cifry b{margin:0;font-size:40px;flex:none}
+  .cifry span{font-size:17px}
+  .hronika.v3{grid-template-columns:1fr;row-gap:28px}
+  .lenta.v2{grid-template-columns:1fr}
+  .blok{margin-top:56px;padding-top:36px}
   .polosa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:0 18px 8px;scrollbar-width:none}
   .polosa::-webkit-scrollbar{display:none}
   .ril{flex:0 0 44%;scroll-snap-align:start}
@@ -221,6 +255,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       <a href="#expertise">Экспертиза</a>
       <a href="#speaking">Выступления</a>
       <a href="#biography">Биография</a>
+      <a href="#charity">Благотворительность</a>
       <a href="#contacts" class="sv">Контакты</a>
     </nav>
   </div>
@@ -233,13 +268,17 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   <img class="portret" src="foto/portret-anfas.jpg" alt="Дмитрий Викторович Бобров" width="1200" height="1800" fetchpriority="high">
   <div class="w">
     <div class="tekst">
-      <h1 id="imya">Дмитрий<br>Викторович<br>Бобров</h1>
+      <p class="fraza">Смыслы ждут решений!</p>
+      <h1 id="imya">Дмитрий<br>Бобров</h1>
       <div class="titr">
-        <p>Директор Института социально-экономических наук РГГУ</p>
-        <p>Кандидат экономических наук</p>
+        <p>Российский экономист и предприниматель, кандидат экономических наук.</p>
+        <p>Директор Института социально-экономических наук РГГУ.</p>
       </div>
-      <p class="fraza">Наука, управление и развитие человеческого потенциала.</p>
-      <p class="lid">Развивает научные и образовательные проекты на стыке экономики, управления и социальных наук. В центре внимания - человеческий потенциал, качество жизни и устойчивость организаций, территорий и общества.</p>
+      <ul class="regalii">
+        <li>Эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению, развитию человеческого потенциала.</li>
+        <li>Автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент».</li>
+        <li>Создатель уникальных управленческих методик на стыке экономики, социологии и менеджмента.</li>
+      </ul>
       <div class="knopki">
         <a class="b ak" href="#video" onclick="pusk();return true"><span class="tr"></span>Смотреть видео <small>10 мин 32 сек</small></a>
         <a class="b" href="#contacts">Обсудить сотрудничество</a>
@@ -249,6 +288,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <a class="b kont" href="https://vk.ru/dmitrybobrov1" target="_blank" rel="noopener" aria-label="VK Дмитрия Боброва, откроется в новой вкладке">VK</a>
         <a class="b kont" href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
         <a class="b kont" href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
+        <a class="b kont" href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a>
       </div>
     </div>
   </div>
@@ -260,6 +300,14 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     <button class="pusk" id="pusk" onclick="pusk()" aria-label="Смотреть видео"><span><b></b><span>Почему одни растут, а другие боятся начать<small>Видео · 10 мин 32 сек</small></span></span></button>
   </div>
   </section>
+
+<section class="cifry" aria-label="Опыт в цифрах">
+  <div class="w">
+    <article><b>Более 20 лет</b> <span>в науке и образовании</span></article>
+    <article><b>Более 30 лет</b> <span>в бизнесе и управлении</span></article>
+    <article><b>Более 5 лет</b> <span>в экспертизе и аналитике</span></article>
+  </div>
+</section>
 
 <!-- 01 Институт -->
 <section class="razdel" id="institute" aria-labelledby="institute-title">
@@ -316,6 +364,15 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <p><span>Монография · 2026</span>Корпоративная социальная политика: теоретические основы и методические аспекты</p>
       </aside>
     </div>
+    <div class="blok" id="nauchnaya">
+      <h3 id="nauchnaya-title">Научная и образовательная деятельность</h3>
+      <div class="tx2">
+        <p>Директор Института социально-экономических наук РГГУ, кандидат экономических наук, доцент.</p>
+        <p>Автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент», эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению, развитию человеческого потенциала.</p>
+        <p>Автор более 30 научных работ, в том числе монографии «Корпоративная социальная политика: теоретические основы и методические аспекты», соавтор учебников: «Основы суверенной социальной экономики», «Социальный менеджмент», «История современной России. <span class="nw">1985-2025 гг.</span>».</p>
+        <p>В 2016&nbsp;году защитил кандидатскую диссертацию на тему: «Социальная политика крупной хозяйственной системы: содержание, методическое обеспечение, развитие» в Государственном университете управления.</p>
+      </div>
+    </div>
     <div class="publ" id="publications">
       <div class="sh"><span class="metka" style="margin:0">Избранные публикации</span><p class="nw" style="color:var(--mut)">2025-2026</p></div>
       <article class="pub"><time datetime="2025">2025</time><h3>Научная школа «Теория и практика суверенной социальной экономики»: предпосылки формирования и механизмы реализации</h3><span>Исследовательская программа</span></article>
@@ -345,10 +402,46 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       <article><span>Система 02</span><h3>Предпринимательство</h3><p>Создание и развитие компаний, масштабирование процессов и антикризисное управление.</p></article>
       <article><span>Система 03</span><h3>Муниципальное управление</h3><p>Опыт управления экономикой, инфраструктурой и социальной сферой Каширского района.</p></article>
     </div>
+    <div class="blok" id="business">
+      <h3 id="business-title">Управление бизнесом</h3>
+      <div class="tx2">
+        <p>В бизнесе с 1995&nbsp;года. С 2001&nbsp;года владелец многопрофильного бизнеса, включающего несколько направлений: наукоемкие технологии, IT-разработки, восстановление авиационной техники, строительство, сельское хозяйство, производство пищевых продуктов. Общая численность сотрудников - около 1000&nbsp;человек.</p>
+        <p>Практический опыт и владение теорией кризис-менеджмента позволили вывести на прибыльность убыточные производства региона.</p>
+        <p>Опыт создания и масштабирования бизнес-процессов, а также академические знания в таких сферах, как экономика, управление, социология, маркетинг, психология, стали основой для создания авторских методик по эффективному управлению.</p>
+      </div>
+    </div>
+
+    <div class="blok" id="territory">
+      <h3 id="territory-title">Руководство территорией</h3>
+      <div class="hronika v3" aria-label="Выборы">
+        <article><time datetime="2012">2012</time><p>В 2012&nbsp;году избран на должность главы города Кашира.</p></article>
+        <article><time datetime="2013">2013</time><p>В 2013&nbsp;году избран на должность главы Каширского муниципального района.</p></article>
+        <article><time datetime="2015">2015</time><p>В 2015&nbsp;году избран на должность главы городского округа Кашира и председателя Совета депутатов.</p></article>
+      </div>
+    </div>
+    <span class="metka" style="margin-top:56px">На посту главы:</span>
+    <ul class="punkty dva">
+      <li>Организовал работу по возвращению земель в сельхозоборот. За <span class="nw">2014-2015</span> годы введено в оборот более 5000&nbsp;га земли, что позволило увеличить сбор зерновых в 2,5&nbsp;раза по сравнению с предыдущим периодом.</li>
+      <li>Обеспечил привлечение инвесторов для строительства ряда промышленных и аграрных предприятий, среди них крупнейший в регионе тепличный комплекс «Агрокультура Групп», крупнейший в РФ производитель тротуарной плитки - завод «Конгломерат», новая производственная линия филиала «Корыстово» Московского завода «Кристалл» и другие.</li>
+      <li>Преодолел масштабный дефицит бюджета, провел модернизацию системы ЖКХ, строительство и реконструкцию жилых домов и объектов социальной инфраструктуры: детских садов, медицинских и спортивных учреждений, домов культуры и парков.</li>
+      <li>По просьбам жителей совместно с региональными властями реализовал комплекс мер по закрытию полигона ТБО в Ожерелье Московской области.</li>
+      <li>По итогам 2014&nbsp;года вошел в десятку глав с наивысшим губернаторским рейтингом (рост с предпоследней позиции в рейтинге территорий).</li>
+      <li>В 2015&nbsp;году при поддержке Губернатора Московской области А.Ю.&nbsp;Воробьева в числе первых глав муниципалитетов преобразовал Каширский район в городской округ, что позволило выстроить эффективную систему управления, увеличить бюджет, повысить отдачу от инвестиций.</li>
+    </ul>
     <div class="lenta v3">
       <figure><img src="foto/glava-zavod.jpg" alt="Дмитрий Бобров на производстве, в каске" width="1800" height="1200" style="object-position:45% 30%"><figcaption><span>На посту главы · на производстве</span></figcaption></figure>
       <figure><img src="foto/glava-uborochnaya.jpg" alt="Комбайн на уборке урожая" width="1800" height="1200"><figcaption><span>На посту главы · уборочная</span></figcaption></figure>
       <figure><img src="foto/s-gubernatorom.jpg" alt="Дмитрий Бобров на встрече в кабинете" width="1800" height="1196"><figcaption><span>На посту главы · встреча с губернатором</span></figcaption></figure>
+    </div>
+    <div class="dv yak">
+      <ul class="punkty">
+        <li>Организовал изготовление точной копии боевого истребителя <span class="nw">Як-9</span> «Каширский школьник» Героя Советского Союза Алексея Ивановича Выборнова. 7&nbsp;мая 2015&nbsp;года А.И.&nbsp;Выборнов, в возрасте 93&nbsp;лет, принял участие в открытии памятника.</li>
+        <li>Награжден благодарственным письмом и почетной грамотой Губернатора Московской области.</li>
+      </ul>
+      <div class="lenta v2">
+        <figure><img src="foto/yak9-pamyatnik.jpg" alt="Памятник истребителю Як-9 «Каширский школьник» на постаменте" width="1280" height="853" style="object-position:30% 50%"><figcaption><span>Памятник <span class="nw">Як-9</span> «Каширский школьник»</span></figcaption></figure>
+        <figure><img src="foto/glava-veteran.jpg" alt="Дмитрий Бобров с ветераном-лётчиком на открытии памятника" width="1280" height="853" style="object-position:62% 30%"><figcaption><span>На открытии памятника</span></figcaption></figure>
+      </div>
     </div>
   </div>
 </section>
@@ -423,7 +516,8 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <div class="knopki"><a class="b kont" href="https://t.me/bobrovdmitriy" target="_blank" rel="noopener" aria-label="Telegram Дмитрия Боброва, откроется в новой вкладке">Telegram</a>
         <a class="b kont" href="https://vk.ru/dmitrybobrov1" target="_blank" rel="noopener" aria-label="VK Дмитрия Боброва, откроется в новой вкладке">VK</a>
         <a class="b kont" href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
-        <a class="b kont" href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a></div>
+        <a class="b kont" href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
+        <a class="b kont" href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a></div>
       </div>
       <figure class="foto-shir">
         <img src="foto/podkast.jpg" alt="Дмитрий Бобров в студии у микрофона" width="1280" height="960" style="object-position:40% 40%">
@@ -451,12 +545,33 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     <p class="nom"><b>06</b> Биография</p>
     <h2 id="biography-title">Опыт, в котором соединились наука, управление, предпринима&shy;тельство и спорт</h2>
     <div class="dv">
-      <div>
-        <p class="lead">Дмитрий Викторович Бобров родился 1&nbsp;мая 1977&nbsp;года в&nbsp;Кашире Московской области. Получил образование по специальности «Финансы и кредит», в 2016&nbsp;году защитил кандидатскую диссертацию по экономике.</p>
+      <div id="kratkaya">
+        <span class="metka">Краткая биография</span>
+        <p class="lead">Дмитрий Викторович Бобров (родился 1&nbsp;мая 1977&nbsp;года, г.&nbsp;Кашира Московской области) - российский экономист, предприниматель, директор Института социально-экономических наук РГГУ, автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент».</p>
+        <div class="tx2">
+          <p>В прошлом - профессиональный спортсмен, обладатель звания «Самый сильный человек России».</p>
+          <p>Среднюю школу окончил в г.&nbsp;Кашира экстерном в 1994&nbsp;году. С 16&nbsp;лет - в профессиональном спорте. Призер Гран-при Чемпионата мира по силовому экстриму в Ульяновске (1998&nbsp;год), пятикратный победитель соревнований на звание «Самый сильный человек России». С 17&nbsp;лет - автор и ведущий спортивной программы «Масса» на Каширском кабельном телевидении.</p>
+          <p>В 2001&nbsp;году окончил Московский институт экономики, менеджмента и права по специальности «Финансы и кредит».</p>
+          <p>С 2001&nbsp;года - владелец многопрофильного бизнеса. Также в течение ряда лет вел тренерскую и методическую работу в сети фитнес-клубов World Class, для которой разработал авторский курс лекций.</p>
+          <p>В начале 2000-х годов прошел обучение на Высших богословских курсах при Московской Духовной Академии, где изучил историю христианства и других мировых религий. В 2002&nbsp;году поступил на вокальное отделение Института Современного Искусства, где обучался по классу «Академический вокал».</p>
+          <p>В <span class="nw">2004-2026</span> годах вел лекционные курсы по экономике, социологии, менеджменту в университетах Москвы (РГГУ, РАНХиГС при Президенте РФ, ИМЭС, Институт управления и информатики).</p>
+          <p>В 2010&nbsp;году учредил и возглавил фонд содействия деятельности в сфере просвещения и духовного развития личности «Каширский родник».</p>
+          <p>С 2012 по 2019&nbsp;год работал на высших руководящих должностях в органах исполнительной и законодательной власти.</p>
+          <p>С 2021&nbsp;года - на руководящих должностях в системе высшего образования.</p>
+          <p>В <span class="nw">2023-2026</span> годах - проректор по управлению имущественным комплексом и проектной деятельности, первый проректор РГГУ.</p>
+          <p>С 2025&nbsp;года по настоящее время - директор Института социально-экономических наук РГГУ.</p>
+          <p>Женат, отец трех дочерей.</p>
+        </div>
       </div>
-      <figure>
-        <img src="foto/portret-profil.jpg" alt="Дмитрий Викторович Бобров" width="1200" height="1800" style="aspect-ratio:4/3;object-position:50% 22%">
-      </figure>
+      <div class="stopka">
+        <figure>
+          <img src="foto/portret-profil.jpg" alt="Дмитрий Викторович Бобров" width="1200" height="1800" style="aspect-ratio:4/5;object-position:50% 22%">
+        </figure>
+        <figure>
+          <img src="foto/rggu-tribuna.jpg" alt="Дмитрий Бобров выступает с трибуны РГГУ" width="1013" height="1800" style="aspect-ratio:4/5;object-position:50% 30%">
+          <figcaption><span>Выступление</span><span>РГГУ</span></figcaption>
+        </figure>
+      </div>
     </div>
     <div class="hronika" aria-label="Ключевые этапы профессионального пути">
       <article><time datetime="1995">1995</time><h3>Предпринимательство</h3><p>По настоящее время.</p></article>
@@ -472,17 +587,43 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     </div>
 
     <div class="sport dv" id="sport">
-      <figure>
-        <img src="foto/sport.jpg" alt="Дмитрий Бобров в тренажёрном зале с гантелями" width="1200" height="1800" style="aspect-ratio:4/3;object-position:50% 25%">
+      <figure class="lipkoe">
+        <img src="foto/sport.jpg" alt="Дмитрий Бобров в тренажёрном зале с гантелями" width="1200" height="1800" style="aspect-ratio:4/5;object-position:50% 25%">
         <figcaption><span>Тренажёрный зал</span></figcaption>
       </figure>
       <div>
         <span class="metka">Спорт</span>
         <h3 id="sport-title" style="margin-bottom:18px">Дисциплина как часть управленческого метода</h3>
-        <p class="tx2">В юности Дмитрий Бобров профессионально занимался силовым спортом и пять раз становился победителем всероссийских соревнований на звание «Самый сильный человек России».</p>
-        <p class="tx2">Долгосрочное планирование, работа с нагрузкой, ответственность за результат и способность сохранять концентрацию в сложной ситуации стали частью управленческого подхода.</p>
+        <ul class="punkty">
+          <li>В школьные годы по результатам подмосковного чемпионата в Волоколамске стал лучшим футбольным вратарем Московской области.</li>
+          <li>С 14&nbsp;лет занимался единоборствами, с 2011&nbsp;года - обладатель черного пояса Российской Национальной Федерации Каратэ Киокушинкай.</li>
+          <li>С 15&nbsp;лет увлекся бодибилдингом, а в 16&nbsp;лет - выступил на открытом чемпионате Москвы по бодибилдингу, где занял 1&nbsp;место в супертяжелой весовой категории, и 2-е - в абсолютной.</li>
+          <li>С 20&nbsp;лет занимался силовым экстримом, выступал на всероссийских и международных спортивных чемпионатах.</li>
+          <li>Призер Гран-при Чемпионата мира по силовому экстриму в Ульяновске (1998&nbsp;год).</li>
+          <li>В период с 1998 по 2000&nbsp;годы 5&nbsp;раз побеждал на всероссийских соревнованиях по силовому экстриму на звание «Самый сильный человек России».</li>
+          <li>Вел авторские лекционные курсы по теории и практике силовых тренировок, биомеханике, развитию спортивных качеств для тренерского состава сети фитнес-клубов World Class, выступал с лекциями и мастер-классами на международных фитнес-конвенциях и форумах.</li>
+          <li>Член попечительского совета Всемирной федерации пауэрлифтинга без экипировки <span class="nw">WRPF-Россия</span>.</li>
+          <li>Организатор международных турниров и мультиспортивных фестивалей Sarychev Power Expo.</li>
+        </ul>
+        <p class="tx2" style="margin-top:28px">Долгосрочное планирование, работа с нагрузкой, ответственность за результат и способность сохранять концентрацию в сложной ситуации стали частью управленческого подхода.</p>
         <blockquote>Сильный результат - это не разовое усилие, а система подготовки, обратной связи и последовательных действий.</blockquote>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 Благотворительность -->
+<section class="razdel" id="charity" aria-labelledby="charity-title">
+  <div class="w">
+    <p class="nom"><b>07</b> Благотворительность</p>
+    <h2 id="charity-title">Фонд «Каширский родник»</h2>
+    <p class="lead" style="max-width:38em">В 2010&nbsp;году учредил и возглавил фонд содействия деятельности в сфере просвещения и духовного развития личности «Каширский родник».</p>
+    <span class="metka" style="margin-top:40px">Фондом проведены работы:</span>
+    <div class="kartochki k4">
+      <article><span>01</span><p>Восстановлен в историческом архитектурном облике храм Вознесения Господня в селе Большое Руново.</p></article>
+      <article><span>02</span><p>Построен храм в честь св.&nbsp;Петра и Февронии Муромских в г.&nbsp;Кашира.</p></article>
+      <article><span>03</span><p>Отремонтированы десятки спортзалов, актовых залов и учебных классов в школах, установлены детские игровые и спортивные площадки во дворах Каширы и Каширского района.</p></article>
+      <article><span>04</span><p>В течение ряда лет проводились семейные фестивали и творческие конкурсы «Счастливое Рождество» и «Светлое Христово Воскресение», объединившие более 5000 детей и взрослых.</p></article>
     </div>
   </div>
 </section>
@@ -496,11 +637,12 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     <div class="knopki" style="margin-top:26px"><a class="b ak" href="https://t.me/bobrovdmitriy" target="_blank" rel="noopener" aria-label="Telegram Дмитрия Боброва, откроется в новой вкладке">Telegram</a>
         <a class="b " href="https://vk.ru/dmitrybobrov1" target="_blank" rel="noopener" aria-label="VK Дмитрия Боброва, откроется в новой вкладке">VK</a>
         <a class="b " href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
-        <a class="b " href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a></div>
+        <a class="b " href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
+        <a class="b " href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a></div>
     <footer class="podval">
       <div><p>Дмитрий Викторович Бобров</p><span>Директор Института социально-экономических наук РГГУ</span></div>
       <nav aria-label="Разделы">
-        <a href="#institute">Институт</a><a href="#science">Наука</a><a href="#experience">Проекты</a><a href="#expertise">Экспертиза</a><a href="#speaking">Выступления</a><a href="#biography">Биография</a><a href="#contacts">Контакты</a>
+        <a href="#institute">Институт</a><a href="#science">Наука</a><a href="#experience">Проекты</a><a href="#expertise">Экспертиза</a><a href="#speaking">Выступления</a><a href="#biography">Биография</a><a href="#charity">Благотворительность</a><a href="#contacts">Контакты</a>
       </nav>
       <div class="meta"><span>© 2026 Персональный сайт</span><span>Не является официальным сайтом РГГУ.</span></div>
     </footer>
