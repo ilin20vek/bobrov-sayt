@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0e0e0f">
+<meta name="theme-color" content="#07122b">
 <meta name="description" content="Сайт Дмитрия Викторовича Боброва: научная и образовательная деятельность, суверенная социальная экономика, социальный менеджмент, развитие человеческого потенциала, выступления и экспертная работа.">
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="ru_RU">
@@ -20,7 +20,7 @@
 @font-face{font-family:'Sofia Sans';src:url(fonts/sofia-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:'SSEC';src:url(fonts/sofia-sans-extra-condensed-800.woff2) format('woff2');font-weight:800;font-display:swap}
 @font-face{font-family:'OST';src:url(fonts/old-standard-tt-italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
-:root{--bg:#0e0e0f;--pl:#1c1c1e;--li:#2c2c2e;--tx:#f2f2f2;--tx2:#d9d9de;--mut:#a7a7ad;--ak:#ff6a00;--ak2:#ff8b3d;--hd:'SSEC','Arial Narrow',sans-serif;--sr:'OST',Georgia,serif}
+:root{--bg:#07122b;--pl:#0e1d3f;--li:#1b2d55;--tx:#f2f2f2;--tx2:#d9d9de;--mut:#a7a7ad;--ak:#ff6a00;--ak2:#ff8b3d;--hd:'SSEC','Arial Narrow',sans-serif;--sr:'OST',Georgia,serif}
 *{box-sizing:border-box}
 html{background:var(--bg);color:var(--tx);-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:64px}
 body{margin:0;font:400 18px/1.55 'Sofia Sans',system-ui,sans-serif;overflow-x:hidden}
@@ -32,9 +32,9 @@ h1,h2,h3,h4{margin:0}
 .w{max-width:1200px;margin:0 auto;padding:0 24px}
 
 /* шапка */
-.shapka{position:sticky;top:0;z-index:20;background:rgba(14,14,15,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--li)}
+.shapka{position:sticky;top:0;z-index:20;background:rgba(7,18,43,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--li)}
 .shapka .w{display:flex;align-items:center;gap:28px;height:60px}
-.marka{display:flex;align-items:center;gap:10px;color:var(--tx);text-decoration:none;font:800 24px/1 var(--hd);letter-spacing:.01em;white-space:nowrap}
+.marka{display:flex;align-items:center;gap:10px;color:var(--tx);text-decoration:none;font:700 22px/1 'Sofia Sans';letter-spacing:.005em;white-space:nowrap}
 .marka i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--ak);border-radius:50%;font:800 16px/1 var(--hd);color:var(--ak)}
 .menu{display:flex;gap:4px;margin-left:auto}
 .menu a{color:var(--tx2);text-decoration:none;font:700 15px/1 'Sofia Sans';padding:9px 11px;border-radius:999px;white-space:nowrap}
@@ -47,7 +47,7 @@ h1,h2,h3,h4{margin:0}
 .afisha .portret{position:absolute;right:0;top:0;height:100%;width:52%;object-fit:cover;object-position:50% 18%;-webkit-mask-image:linear-gradient(to left,#000 55%,transparent 100%),linear-gradient(to top,transparent 0,#000 22%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to left,#000 55%,transparent 100%),linear-gradient(to top,transparent 0,#000 22%);mask-composite:intersect}
 .afisha .w{position:relative;width:100%;padding-top:44px;padding-bottom:44px}
 .afisha .tekst{max-width:600px}
-.afisha h1{font:800 clamp(58px,7.6vw,104px)/.92 var(--hd);letter-spacing:.004em;margin:0 0 24px}
+.afisha h1{font:700 clamp(50px,6.2vw,92px)/.98 'Sofia Sans';letter-spacing:-.005em;margin:0 0 24px}
 .titr{border-left:3px solid var(--ak);padding:2px 0 2px 16px;margin:0 0 26px}
 .titr p{margin:0;font:700 20px/1.3 'Sofia Sans';color:var(--tx)}
 .titr p+p{font-weight:400;color:var(--mut);margin-top:4px}
@@ -73,11 +73,11 @@ h1,h2,h3,h4{margin:0}
 .punkty.dva li{break-inside:avoid}
 .lipkoe{position:sticky;top:84px}
 .knopki{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.b{display:inline-flex;align-items:center;gap:10px;background:#2c2c2e;color:var(--tx);border:0;border-radius:999px;padding:12px 20px;text-decoration:none;font:700 16px/1.1 'Sofia Sans';cursor:pointer;white-space:nowrap}
-.b:hover{background:#3a3a3c}
+.b{display:inline-flex;align-items:center;gap:10px;background:#1b2d55;color:var(--tx);border:0;border-radius:999px;padding:12px 20px;text-decoration:none;font:700 16px/1.1 'Sofia Sans';cursor:pointer;white-space:nowrap}
+.b:hover{background:#2b4272}
 .b.ak{background:var(--ak);color:#111}
 .b.ak:hover{background:var(--ak2)}
-.b.kont{background:transparent;border:1.5px solid #3a3a3c;color:var(--tx2)}
+.b.kont{background:transparent;border:1.5px solid #2b4272;color:var(--tx2)}
 .b.kont:hover{border-color:var(--ak);color:var(--tx)}
 .b .tr{display:inline-block;width:0;height:0;border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
 .b small{font-size:15px;font-weight:400;opacity:.8}
@@ -86,7 +86,7 @@ h1,h2,h3,h4{margin:0}
 /* видео 3:16 */
 .video{padding:56px 0 8px}
 .ekran{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.ekran img,.ekran iframe{display:block;width:100%;height:100%;object-fit:cover;border:0}
+.ekran img,.ekran iframe,.ekran video{display:block;width:100%;height:100%;object-fit:cover;border:0}
 .ekran .pusk{all:unset;cursor:pointer;position:absolute;inset:0;display:flex;align-items:flex-end;padding:28px;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 45%)}
 .ekran .pusk span{display:inline-flex;align-items:center;gap:14px;font:700 19px/1.2 'Sofia Sans';color:#fff}
 .ekran .pusk b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--ak)}
@@ -96,7 +96,7 @@ h1,h2,h3,h4{margin:0}
 
 /* разделы */
 .razdel{padding:96px 0;border-top:1px solid var(--li)}
-.razdel.tmn{background:#131315}
+.razdel.tmn{background:#0a173a}
 .nom{display:flex;align-items:center;gap:12px;margin:0 0 18px;font:700 16px/1.2 'Sofia Sans';color:var(--ak2);letter-spacing:.02em}
 .nom b{font:800 22px/1 var(--hd);color:var(--ak)}
 .nom:before{content:"";flex:none;width:28px;height:2px;background:var(--ak)}
@@ -107,7 +107,7 @@ h3{font:800 clamp(28px,3vw,38px)/1.05 var(--hd)}
 .dv{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
 .metka{display:block;font:700 15px/1.3 'Sofia Sans';color:var(--mut);text-transform:uppercase;letter-spacing:.12em;margin:0 0 14px}
 figure{margin:0}
-figure img{width:100%;border-radius:16px;object-fit:cover;background:#222}
+figure img{width:100%;border-radius:16px;object-fit:cover;background:#0e1d3f}
 figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:15px;line-height:1.35;color:var(--mut)}
 .kartochki{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .kartochki article{background:var(--pl);border-radius:16px;padding:22px 22px 20px;border-top:2px solid var(--ak)}
@@ -122,10 +122,14 @@ figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;f
 .napr li{counter-increment:n;display:grid;grid-template-columns:44px 1fr;gap:6px;padding:14px 0;border-top:1px solid var(--li);color:var(--tx)}
 .napr li:before{content:counter(n,decimal-leading-zero);font:800 20px/1.3 var(--hd);color:var(--ak)}
 .monografiya{background:var(--pl);border-radius:18px;padding:22px}
-.monografiya img{border-radius:8px;aspect-ratio:1242/1800;width:100%;max-width:300px;margin:0 auto 18px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.monografiya img{border-radius:8px;aspect-ratio:1242/1800;width:100%;max-width:300px;margin:0 auto 18px;box-shadow:0 20px 50px rgba(0,5,20,.55)}
 .monografiya p{margin:0;font:700 19px/1.35 'Sofia Sans'}
 .monografiya p span{display:block;font:400 15px/1.3 'Sofia Sans';color:var(--ak2);margin-bottom:6px;letter-spacing:.04em}
 .publ{margin-top:64px}
+.tabl p{margin:0;padding:18px 0;border-top:1px solid var(--li);color:var(--tx2);font-size:17px;line-height:1.55}
+.tabl p:last-child{border-bottom:1px solid var(--li)}
+.nb2{margin-top:72px;padding-top:56px;border-top:1px solid var(--li)}
+.nb1 .monografiya img{max-width:300px}
 .publ .sh{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--li);padding-bottom:12px}
 .publ .sh p{margin:0}
 .pub{display:grid;grid-template-columns:90px 1fr 220px;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--li)}
@@ -137,11 +141,14 @@ figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;f
 .lenta{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
 .lenta img{aspect-ratio:4/3}
 .lenta.v3{grid-template-columns:repeat(3,1fr)}
+.lenta.v5{grid-template-columns:repeat(5,1fr)}
+.lenta.gal{grid-template-columns:repeat(6,1fr);gap:10px;margin-top:14px}
+.lenta.gal img{aspect-ratio:2/3;object-position:50% 25%}
 .foto-shir img{aspect-ratio:16/10}
 
 /* форматы и темы */
 .chipy{display:flex;flex-wrap:wrap;gap:10px}
-.chipy span{border:1.5px solid #3a3a3c;border-radius:999px;padding:9px 16px;font-size:17px;color:var(--tx2)}
+.chipy span{border:1.5px solid #2b4272;border-radius:999px;padding:9px 16px;font-size:17px;color:var(--tx2)}
 .formaty{margin-top:40px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
 .formaty .metka{margin:0}
 .temy{columns:2;column-gap:40px;list-style:none;margin:0;padding:0}
@@ -156,8 +163,8 @@ figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;f
 .rilsy .sh p{margin:0;color:var(--mut)}
 .polosa{display:grid;grid-template-columns:repeat(6,1fr);gap:20px 14px}
 .ril{all:unset;cursor:pointer;display:block;min-width:0}
-.ril .ob{position:relative;display:block;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#222}
-.ril img,.ril video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ril .ob{position:relative;display:block;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#0e1d3f}
+.ril img,.ril video,.ril iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border:0}
 .ril .ob:after{content:"";position:absolute;right:10px;bottom:10px;width:38px;height:38px;border-radius:50%;background:rgba(255,106,0,.95) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cpath d='M15 12l12 7-12 7z' fill='%23111'/%3E%3C/svg%3E") center/38px no-repeat}
 .ril.idet .ob:after{display:none}
 .ril:hover .ob{outline:2px solid var(--ak)}
@@ -165,7 +172,7 @@ figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;f
 
 /* биография */
 .hronika{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:56px;position:relative}
-.hronika article{padding:30px 22px 0 0;position:relative;border-top:2px solid #3a3a3c}
+.hronika article{padding:30px 22px 0 0;position:relative;border-top:2px solid #2b4272}
 .hronika article:before{content:"";position:absolute;left:0;top:-9px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--ak)}
 .hronika article:last-child:before{background:var(--ak)}
 .hronika time{display:block;font:800 34px/1 var(--hd);color:var(--tx);margin-bottom:8px}
@@ -208,7 +215,9 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   .punkty.dva{columns:1}
   .polosa{grid-template-columns:repeat(4,1fr)}
   .hronika{grid-template-columns:repeat(3,1fr);row-gap:40px}
-  .lenta{grid-template-columns:1fr 1fr}
+  .lenta,.lenta.v5{grid-template-columns:1fr 1fr}
+  .lenta.v5 figure:last-child{grid-column:1/-1}
+  .lenta.gal{grid-template-columns:repeat(3,1fr)}
   .podval{grid-template-columns:1fr}
   .podval .meta{text-align:left}
 }
@@ -217,7 +226,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   .w{padding:0 18px}
   .razdel{padding:68px 0}
   h2{margin-bottom:28px}
-  .afisha h1{font-size:clamp(52px,15vw,72px)}
+  .afisha h1{font-size:clamp(44px,12.5vw,64px)}
   .titr p{font-size:18px}
   .kartochki,.kartochki.k4{grid-template-columns:1fr}
   .cifry .w{grid-template-columns:1fr;gap:10px}
@@ -235,6 +244,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   .pub span{grid-column:2;text-align:left}
   .temy{columns:1}
   .lenta.v3{grid-template-columns:1fr 1fr}
+  .lenta.gal{grid-template-columns:repeat(2,1fr)}
   .ekran .pusk{padding:16px}
   .ekran .pusk b{width:52px;height:52px}
   .ekran .pusk span span{display:none}
@@ -251,11 +261,10 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     <nav class="menu" aria-label="Разделы">
       <a href="#institute">Институт</a>
       <a href="#science">Наука</a>
-      <a href="#experience">Проекты</a>
+      <a href="#experience">Управление</a>
       <a href="#expertise">Экспертиза</a>
       <a href="#speaking">Выступления</a>
       <a href="#biography">Биография</a>
-      <a href="#charity">Благотворительность</a>
       <a href="#contacts" class="sv">Контакты</a>
     </nav>
   </div>
@@ -275,12 +284,12 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <p>Директор Института социально-экономических наук РГГУ.</p>
       </div>
       <ul class="regalii">
-        <li>Эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению, развитию человеческого потенциала.</li>
+        <li>Эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению.</li>
         <li>Автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент».</li>
         <li>Создатель уникальных управленческих методик на стыке экономики, социологии и менеджмента.</li>
       </ul>
       <div class="knopki">
-        <a class="b ak" href="#video" onclick="pusk();return true"><span class="tr"></span>Смотреть видео <small>10 мин 32 сек</small></a>
+        <a class="b ak" href="#video" onclick="pusk();return true"><span class="tr"></span>Смотреть видео <small>3 мин 16 сек</small></a>
         <a class="b" href="#contacts">Обсудить сотрудничество</a>
       </div>
       <div class="knopki svyaz">
@@ -289,23 +298,24 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <a class="b kont" href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
         <a class="b kont" href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
         <a class="b kont" href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a>
+        <a class="b kont" href="https://dzen.ru/id/6a8eacbfa22f2c2b921dac9c?share_to=link" target="_blank" rel="noopener" aria-label="Дзен Дмитрия Боброва, откроется в новой вкладке">Дзен</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="video w" id="video" aria-label="Видео: Почему одни растут, а другие боятся начать, 10 минут 32 секунды">
+<section class="video w" id="video" aria-label="Видеовизитка Дмитрия Боброва, 3 минуты 16 секунд">
   <div class="ekran" id="ekran">
-    <img src="v/rastut.jpg" alt="Дмитрий Бобров в студии" width="1600" height="900">
-    <button class="pusk" id="pusk" onclick="pusk()" aria-label="Смотреть видео"><span><b></b><span>Почему одни растут, а другие боятся начать<small>Видео · 10 мин 32 сек</small></span></span></button>
+    <img src="v/vizitka.jpg" alt="Дмитрий Бобров, видеовизитка" width="1280" height="720">
+    <button class="pusk" id="pusk" onclick="pusk()" aria-label="Смотреть видео"><span><b></b><span>Видеовизитка<small>Видео · 3 мин 16 сек</small></span></span></button>
   </div>
   </section>
 
 <section class="cifry" aria-label="Опыт в цифрах">
   <div class="w">
+    <article><b>Более 10 лет</b> <span>в экспертизе и аналитике</span></article>
     <article><b>Более 20 лет</b> <span>в науке и образовании</span></article>
     <article><b>Более 30 лет</b> <span>в бизнесе и управлении</span></article>
-    <article><b>Более 5 лет</b> <span>в экспертизе и аналитике</span></article>
   </div>
 </section>
 
@@ -316,25 +326,12 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     <h2 id="institute-title">Экономика, управление и социальные науки - в единой среде</h2>
     <div class="dv">
       <div>
-        <p class="lead">Институт готовит специалистов, способных работать со сложными социально-экономическими системами, и формирует научную повестку, отвечающую на запросы государства, бизнеса и общества.</p>
-        <p class="tx2">В работе директора ИСЭН РГГУ Дмитрий Бобров уделяет внимание развитию образовательных программ, научных направлений и проектной деятельности. Приоритет - применение академических знаний для решения управленческих и социально-экономических задач.</p>
+        <p class="lead">Дмитрий Викторович Бобров руководит Институтом социально-экономических наук (ИСЭН РГГУ), который готовит специалистов, способных работать со сложными социально-экономическими системами, и формирует научную повестку, отвечающую на запросы государства, бизнеса и общества.</p>
       </div>
       <figure class="foto-shir">
-        <img src="foto/rggu-doklad.jpg" alt="Дмитрий Бобров выступает с докладом в РГГУ" width="1200" height="800" style="object-position:40% 30%">
-        <figcaption><span>Научная работа</span><span>РГГУ</span></figcaption>
+        <img src="foto/institut-novoe.jpg" alt="Дмитрий Бобров, директор ИСЭН РГГУ" width="1200" height="1800" style="aspect-ratio:4/5;object-position:50% 25%">
+        <figcaption><span>Директор ИСЭН</span><span>РГГУ</span></figcaption>
       </figure>
-    </div>
-    <div class="ideya" id="approach">
-      <div>
-        <span class="metka">Объединяющая идея</span>
-        <h3 id="approach-title">Цель - развитие человеческого потенциала</h3>
-        <p class="tx2">Человек - не только носитель знаний и навыков. Потенциал включает способности, ценности, устремления и возможность найти своё место в созидательной деятельности.</p>
-      </div>
-      <div class="kartochki">
-        <article><span>01</span><h4>Человек</h4><p>Возможности, достоинство, профессиональная траектория и качество жизни.</p></article>
-        <article><span>02</span><h4>Система</h4><p>Цели, ответственность, институты и устойчивые управленческие процессы.</p></article>
-        <article><span>03</span><h4>Созидание</h4><p>Знание, которое превращается в развитие организации, территории и общества.</p></article>
-      </div>
     </div>
   </div>
 </section>
@@ -343,42 +340,37 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
 <section class="razdel tmn" id="science" aria-labelledby="science-title">
   <div class="w">
     <p class="nom"><b>02</b> Наука</p>
-    <h2 id="science-title">Суверенная социальная экономика, менеджмент крупных хозяйственных систем, управление развитием человека</h2>
-    <div class="dv">
+    <h2 id="science-title">Суверенная социальная экономика, социальный менеджмент, корпоративное управление, развитие производительных сил</h2>
+    <div class="dv nb1">
       <div>
-        <p class="lead">Дмитрий Бобров - автор научного направления «Теория и практика суверенной социальной экономики», сформированного на базе ИСЭН РГГУ.</p>
-        <p class="tx2">В центре исследований - модель развития, которая соединяет экономическую устойчивость, национальные интересы, социальную справедливость и воспроизводство человеческого потенциала.</p>
-        <span class="metka" style="margin-top:36px">Направления исследований</span>
+        <span class="metka">Научная деятельность</span>
+        <div class="tabl">
+          <p>Дмитрий Бобров - автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент», эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению.</p>
+          <p>Редактор журнала «Вестник РГГУ. Серия: Экономика. Управление».</p>
+          <p>Автор более 30 научных работ, в том числе монографии «Корпоративная социальная политика: теоретические основы и методические аспекты», соавтор учебников: «Основы суверенной социальной экономики», «Социальный менеджмент», «История современной России. <span class="nw">1985-2025 гг.</span>».</p>
+          <p>В 2016&nbsp;году защитил кандидатскую диссертацию на тему: «Социальная политика крупной хозяйственной системы: содержание, методическое обеспечение, развитие» в Государственном университете управления.</p>
+        </div>
+      </div>
+      <aside class="monografiya">
+        <img src="foto/zhurnal-vestnik.jpg" alt="Обложка журнала «Вестник РГГУ. Серия: Экономика. Управление»" width="1168" height="1800" style="aspect-ratio:1168/1800">
+        <p><span>Журнал</span>«Вестник РГГУ. Серия: Экономика. Управление»</p>
+      </aside>
+    </div>
+    <div class="dv nb2">
+      <div>
+        <span class="metka">Направления исследований</span>
         <ol class="napr">
           <li>Суверенная социальная экономика и трансформация экономических моделей</li>
-          <li>Человеческий потенциал, человеческий капитал и качество жизни</li>
-          <li>Социальный менеджмент и управление организационными системами</li>
-          <li>Демография, территориальное неравенство и воспроизводство кадров</li>
+          <li>Социальный менеджмент и управление хозяйственными системами</li>
+          <li>Демография, воспроизводство человеческого и кадрового потенциала</li>
           <li>Политэкономический анализ и стратегическое прогнозирование</li>
-          <li>Развитие производительных сил</li>
-          <li>Платформенная экономика и применение ИИ-агентов в промышленности и торговле</li>
+          <li>Развитие производительных сил: роботизация, искусственный интеллект, цифровые платформы</li>
         </ol>
       </div>
       <aside class="monografiya">
         <img src="foto/monografiya.jpg" alt="Обложка монографии «Корпоративная социальная политика: теоретические основы и методические аспекты»" width="1242" height="1800">
-        <p><span>Монография · 2026</span>Корпоративная социальная политика: теоретические основы и методические аспекты</p>
+        <p><span>Монография</span>«Корпоративная социальная политика: теоретические основы и методические аспекты»</p>
       </aside>
-    </div>
-    <div class="blok" id="nauchnaya">
-      <h3 id="nauchnaya-title">Научная и образовательная деятельность</h3>
-      <div class="tx2">
-        <p>Директор Института социально-экономических наук РГГУ, кандидат экономических наук, доцент.</p>
-        <p>Автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент», эксперт по политэкономическому анализу проблем современного общества, платформенной экономике, стратегическому и корпоративному управлению, развитию человеческого потенциала.</p>
-        <p>Автор более 30 научных работ, в том числе монографии «Корпоративная социальная политика: теоретические основы и методические аспекты», соавтор учебников: «Основы суверенной социальной экономики», «Социальный менеджмент», «История современной России. <span class="nw">1985-2025 гг.</span>».</p>
-        <p>В 2016&nbsp;году защитил кандидатскую диссертацию на тему: «Социальная политика крупной хозяйственной системы: содержание, методическое обеспечение, развитие» в Государственном университете управления.</p>
-      </div>
-    </div>
-    <div class="publ" id="publications">
-      <div class="sh"><span class="metka" style="margin:0">Избранные публикации</span><p class="nw" style="color:var(--mut)">2025-2026</p></div>
-      <article class="pub"><time datetime="2025">2025</time><h3>Научная школа «Теория и практика суверенной социальной экономики»: предпосылки формирования и механизмы реализации</h3><span>Исследовательская программа</span></article>
-      <article class="pub"><time datetime="2026">2026</time><h3>Суверенная социальная экономика: человеческий капитал и образование</h3><span>Образование и развитие</span></article>
-      <article class="pub"><time datetime="2026">2026</time><h3 lang="en">Sovereign Social Economy: New Opportunities for Improving the Quality of Life</h3><span lang="en">Quality of life</span></article>
-      <article class="pub"><time datetime="2026">2026</time><h3>Корпоративная социальная политика: теоретические основы и методические аспекты</h3><span>Монография</span></article>
     </div>
   </div>
 </section>
@@ -386,7 +378,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
 <!-- 03 Проекты -->
 <section class="razdel" id="experience" aria-labelledby="experience-title">
   <div class="w">
-    <p class="nom"><b>03</b> Проекты</p>
+    <p class="nom"><b>03</b> Управление</p>
     <h2 id="experience-title">Опыт управления системами разного масштаба</h2>
     <div class="dv">
       <div>
@@ -398,9 +390,9 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       </figure>
     </div>
     <div class="kartochki" style="margin-top:48px">
-      <article><span>Система 01</span><h3>Высшее образование</h3><p>Руководство Институтом, работа первым проректором РГГУ и заведующим кафедрой управления.</p></article>
+      <article><span>Система 01</span><h3>Университеты</h3><p>Руководство Институтом, работа первым проректором РГГУ и заведующим кафедрой управления.</p></article>
       <article><span>Система 02</span><h3>Предпринимательство</h3><p>Создание и развитие компаний, масштабирование процессов и антикризисное управление.</p></article>
-      <article><span>Система 03</span><h3>Муниципальное управление</h3><p>Опыт управления экономикой, инфраструктурой и социальной сферой Каширского района.</p></article>
+      <article><span>Система 03</span><h3>Управление территорией</h3><p>Опыт управления экономикой, инфраструктурой и социальной сферой Каширского района.</p></article>
     </div>
     <div class="blok" id="business">
       <h3 id="business-title">Управление бизнесом</h3>
@@ -430,7 +422,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     </ul>
     <div class="lenta v3">
       <figure><img src="foto/glava-zavod.jpg" alt="Дмитрий Бобров на производстве, в каске" width="1800" height="1200" style="object-position:45% 30%"><figcaption><span>На посту главы · на производстве</span></figcaption></figure>
-      <figure><img src="foto/glava-uborochnaya.jpg" alt="Комбайн на уборке урожая" width="1800" height="1200"><figcaption><span>На посту главы · уборочная</span></figcaption></figure>
+      <figure><img src="foto/glava-uborochnaya.jpg" alt="Комбайн на уборке урожая" width="1800" height="1200"><figcaption><span>На посту главы · за рулем комбайна</span></figcaption></figure>
       <figure><img src="foto/s-gubernatorom.jpg" alt="Дмитрий Бобров на встрече в кабинете" width="1800" height="1196"><figcaption><span>На посту главы · встреча с губернатором</span></figcaption></figure>
     </div>
     <div class="dv yak">
@@ -439,8 +431,8 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <li>Награжден благодарственным письмом и почетной грамотой Губернатора Московской области.</li>
       </ul>
       <div class="lenta v2">
-        <figure><img src="foto/yak9-pamyatnik.jpg" alt="Памятник истребителю Як-9 «Каширский школьник» на постаменте" width="1280" height="853" style="object-position:30% 50%"><figcaption><span>Памятник <span class="nw">Як-9</span> «Каширский школьник»</span></figcaption></figure>
         <figure><img src="foto/glava-veteran.jpg" alt="Дмитрий Бобров с ветераном-лётчиком на открытии памятника" width="1280" height="853" style="object-position:62% 30%"><figcaption><span>На открытии памятника</span></figcaption></figure>
+        <figure><img src="foto/yak9-pamyatnik.jpg" alt="Памятник истребителю Як-9 «Каширский школьник» на постаменте" width="1280" height="853" style="object-position:30% 50%"><figcaption><span>Памятник <span class="nw">Як-9</span> «Каширский школьник»</span></figcaption></figure>
       </div>
     </div>
   </div>
@@ -501,11 +493,20 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         </ul>
       </div>
     </div>
-    <div class="lenta">
+    <div class="lenta v5">
       <figure><img src="foto/vystuplenie-mikrofon.jpg" alt="Дмитрий Бобров выступает у микрофона" width="1800" height="1200" style="object-position:62% 30%"><figcaption><span>Выступление</span></figcaption></figure>
       <figure><img src="foto/diskussiya.jpg" alt="Дмитрий Бобров с микрофоном на дискуссии" width="1280" height="1008" style="object-position:40% 25%"><figcaption><span>Дискуссия</span></figcaption></figure>
       <figure><img src="foto/kruglyy-stol.jpg" alt="Дмитрий Бобров за столом президиума" width="1200" height="800"><figcaption><span>Круглый стол</span></figcaption></figure>
       <figure><img src="foto/proektnaya-shkola.jpg" alt="Дмитрий Бобров выступает на Междисциплинарной проектной школе" width="1280" height="720" style="object-position:62% 50%"><figcaption><span>Междисциплинарная проектная школа</span></figcaption></figure>
+      <figure><img src="foto/rggu-doklad.jpg" alt="Дмитрий Бобров выступает с докладом в РГГУ" width="1200" height="800" style="object-position:40% 30%"><figcaption><span>Научная работа</span><span>РГГУ</span></figcaption></figure>
+    </div>
+    <div class="lenta gal" aria-label="Фото с мероприятия">
+      <figure><img src="foto/meropr-1.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="foto/meropr-2.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="foto/meropr-3.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="foto/meropr-4.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="foto/meropr-5.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
+      <figure><img src="foto/meropr-6.jpg" alt="Дмитрий Бобров на мероприятии" width="1200" height="1800" loading="lazy"></figure>
     </div>
 
     <div class="media dv" id="media">
@@ -517,7 +518,8 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <a class="b kont" href="https://vk.ru/dmitrybobrov1" target="_blank" rel="noopener" aria-label="VK Дмитрия Боброва, откроется в новой вкладке">VK</a>
         <a class="b kont" href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
         <a class="b kont" href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
-        <a class="b kont" href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a></div>
+        <a class="b kont" href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a>
+        <a class="b kont" href="https://dzen.ru/id/6a8eacbfa22f2c2b921dac9c?share_to=link" target="_blank" rel="noopener" aria-label="Дзен Дмитрия Боброва, откроется в новой вкладке">Дзен</a></div>
       </div>
       <figure class="foto-shir">
         <img src="foto/podkast.jpg" alt="Дмитрий Бобров в студии у микрофона" width="1280" height="960" style="object-position:40% 40%">
@@ -526,14 +528,14 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
     </div>
 
     <div class="rilsy" id="rilsy">
-      <div class="sh"><h3>Короткие ролики</h3><p>Из подкаста с Игорем Малининым · 6 роликов</p></div>
+      <div class="sh"><h3>Короткие ролики</h3><p>Из разных выпусков канала · 6 роликов</p></div>
       <div class="polosa">
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n19-ii-agenty-vmesto-15.mp4" aria-label="Смотреть: Заменил 15 сотрудников ИИ-агентами. Что вышло?"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n19-ii-agenty-vmesto-15.jpg" alt="" width="540" height="960"></span><span class="nz">Заменил 15 сотрудников ИИ-агентами. Что вышло?</span></button>
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n20-proizvesti-legche-chem-prodat.mp4" aria-label="Смотреть: Почему хороший товар не продаётся сам"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n20-proizvesti-legche-chem-prodat.jpg" alt="" width="540" height="960"></span><span class="nz">Почему хороший товар не продаётся сам</span></button>
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n21-sklad-sgorel.mp4" aria-label="Смотреть: Продаёте только на маркетплейсе? Что будет после пожаров"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n21-sklad-sgorel.jpg" alt="" width="540" height="960"></span><span class="nz">Продаёте только на маркетплейсе? Что будет после пожаров</span></button>
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n23-sobstvennik-ne-na-svoey-polyane.mp4" aria-label="Смотреть: Главная ошибка собственника бизнеса"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n23-sobstvennik-ne-na-svoey-polyane.jpg" alt="" width="540" height="960"></span><span class="nz">Главная ошибка собственника бизнеса</span></button>
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n24-dorozhe-zheleznyh-dorog.mp4" aria-label="Смотреть: Что сегодня стоит дороже заводов и железных дорог"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n24-dorozhe-zheleznyh-dorog.jpg" alt="" width="540" height="960"></span><span class="nz">Что сегодня стоит дороже заводов и железных дорог</span></button>
-        <button class="ril" type="button" data-v="https://ilin20vek.github.io/bobrov-rilsy/v/n22-uchebnik-v-gpt.mp4" aria-label="Смотреть: Учебник за студента читает ChatGPT. Чем это кончится"><span class="ob"><img src="https://ilin20vek.github.io/bobrov-rilsy/o/n22-uchebnik-v-gpt.jpg" alt="" width="540" height="960"></span><span class="nz">Учебник за студента читает ChatGPT. Чем это кончится</span></button>
+        <button class="ril" type="button" data-y="zVoNeJnnRqU" aria-label="Смотреть: Почему ваш список дел не работает?"><span class="ob"><img src="o/y-zVoNeJnnRqU.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Почему ваш список дел не работает?</span></button>
+        <button class="ril" type="button" data-y="yyfyO5YWywE" aria-label="Смотреть: Ваши приказы больше не работают"><span class="ob"><img src="o/y-yyfyO5YWywE.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Ваши приказы больше не работают</span></button>
+        <button class="ril" type="button" data-y="V5seVG-48cQ" aria-label="Смотреть: Главная ошибка начинающего руководителя"><span class="ob"><img src="o/y-V5seVG-48cQ.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Главная ошибка начинающего руководителя</span></button>
+        <button class="ril" type="button" data-y="lYS7tbW-ToI" aria-label="Смотреть: Почему тотальный контроль убивает бизнес?"><span class="ob"><img src="o/y-lYS7tbW-ToI.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Почему тотальный контроль убивает бизнес?</span></button>
+        <button class="ril" type="button" data-y="a01aCIL5g3c" aria-label="Смотреть: Подушка безопасности. Зачем она вам?"><span class="ob"><img src="o/y-a01aCIL5g3c.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Подушка безопасности. Зачем она вам?</span></button>
+        <button class="ril" type="button" data-y="d69OyzqDpUc" aria-label="Смотреть: Бесконфликтный человек: слабость или сила?"><span class="ob"><img src="o/y-d69OyzqDpUc.jpg" alt="" width="540" height="960" loading="lazy"></span><span class="nz">Бесконфликтный человек: слабость или сила?</span></button>
       </div>
     </div>
   </div>
@@ -549,7 +551,6 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <span class="metka">Краткая биография</span>
         <p class="lead">Дмитрий Викторович Бобров (родился 1&nbsp;мая 1977&nbsp;года, г.&nbsp;Кашира Московской области) - российский экономист, предприниматель, директор Института социально-экономических наук РГГУ, автор научных направлений «Суверенная социальная экономика» и «Социальный менеджмент».</p>
         <div class="tx2">
-          <p>В прошлом - профессиональный спортсмен, обладатель звания «Самый сильный человек России».</p>
           <p>Среднюю школу окончил в г.&nbsp;Кашира экстерном в 1994&nbsp;году. С 16&nbsp;лет - в профессиональном спорте. Призер Гран-при Чемпионата мира по силовому экстриму в Ульяновске (1998&nbsp;год), пятикратный победитель соревнований на звание «Самый сильный человек России». С 17&nbsp;лет - автор и ведущий спортивной программы «Масса» на Каширском кабельном телевидении.</p>
           <p>В 2001&nbsp;году окончил Московский институт экономики, менеджмента и права по специальности «Финансы и кредит».</p>
           <p>С 2001&nbsp;года - владелец многопрофильного бизнеса. Также в течение ряда лет вел тренерскую и методическую работу в сети фитнес-клубов World Class, для которой разработал авторский курс лекций.</p>
@@ -581,11 +582,6 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       <article><time datetime="2021">2021</time><h3>Управление в сфере науки и высшего образования</h3></article>
       <article><time datetime="2025">2025</time><h3>ИСЭН РГГУ</h3><p>Развитие института (по настоящее время).</p></article>
     </div>
-    <div class="segodnya">
-      <span class="metka">Сегодня</span>
-      <p class="lead">Работа с бизнесом, консультирование и обучение руководителей и владельцев бизнесов.</p>
-    </div>
-
     <div class="sport dv" id="sport">
       <figure class="lipkoe">
         <img src="foto/sport.jpg" alt="Дмитрий Бобров в тренажёрном зале с гантелями" width="1200" height="1800" style="aspect-ratio:4/5;object-position:50% 25%">
@@ -596,7 +592,7 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
         <h3 id="sport-title" style="margin-bottom:18px">Дисциплина как часть управленческого метода</h3>
         <ul class="punkty">
           <li>В школьные годы по результатам подмосковного чемпионата в Волоколамске стал лучшим футбольным вратарем Московской области.</li>
-          <li>С 14&nbsp;лет занимался единоборствами, с 2011&nbsp;года - обладатель черного пояса Российской Национальной Федерации Каратэ Киокушинкай.</li>
+          <li>С 14&nbsp;лет занимался единоборствами, с 2011&nbsp;года - обладатель черного пояса Каратэ Киокушинкай (присвоен Российской Национальной Федерацией Каратэ Киокушинкай).</li>
           <li>С 15&nbsp;лет увлекся бодибилдингом, а в 16&nbsp;лет - выступил на открытом чемпионате Москвы по бодибилдингу, где занял 1&nbsp;место в супертяжелой весовой категории, и 2-е - в абсолютной.</li>
           <li>С 20&nbsp;лет занимался силовым экстримом, выступал на всероссийских и международных спортивных чемпионатах.</li>
           <li>Призер Гран-при Чемпионата мира по силовому экстриму в Ульяновске (1998&nbsp;год).</li>
@@ -605,8 +601,10 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
           <li>Член попечительского совета Всемирной федерации пауэрлифтинга без экипировки <span class="nw">WRPF-Россия</span>.</li>
           <li>Организатор международных турниров и мультиспортивных фестивалей Sarychev Power Expo.</li>
         </ul>
-        <p class="tx2" style="margin-top:28px">Долгосрочное планирование, работа с нагрузкой, ответственность за результат и способность сохранять концентрацию в сложной ситуации стали частью управленческого подхода.</p>
-        <blockquote>Сильный результат - это не разовое усилие, а система подготовки, обратной связи и последовательных действий.</blockquote>
+        <figure class="foto-shir" style="margin-top:28px">
+          <img src="foto/sport-basketbol.jpg" alt="Дмитрий Бобров на баскетбольной площадке, «Динамо»" width="1280" height="853" style="object-position:50% 30%">
+          <figcaption><span>Баскетбол</span><span>Динамо</span></figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -625,6 +623,10 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
       <article><span>03</span><p>Отремонтированы десятки спортзалов, актовых залов и учебных классов в школах, установлены детские игровые и спортивные площадки во дворах Каширы и Каширского района.</p></article>
       <article><span>04</span><p>В течение ряда лет проводились семейные фестивали и творческие конкурсы «Счастливое Рождество» и «Светлое Христово Воскресение», объединившие более 5000 детей и взрослых.</p></article>
     </div>
+    <div class="lenta v2" style="margin-top:40px">
+      <figure><img src="foto/blago-1.jpg" alt="Фонд «Каширский родник»: благотворительная работа" width="1800" height="1200"><figcaption><span>Фонд «Каширский родник»</span></figcaption></figure>
+      <figure><img src="foto/blago-2.jpg" alt="Фонд «Каширский родник»: благотворительная работа" width="1800" height="1200"><figcaption><span>Фонд «Каширский родник»</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -633,16 +635,17 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
   <div class="w">
     <p class="nom">Контакты</p>
     <h2 id="contacts-title">Если вам нужен разговор на уровне смысла, системы и решения - давайте обсудим задачу.</h2>
-    <p class="tx2" style="max-width:40em"><b style="color:var(--tx)">Научное сотрудничество, выступление или экспертный проект</b><br>Выберите удобный канал, чтобы связаться или посмотреть материалы.</p>
+    <p class="tx2" style="max-width:40em">Связаться с Дмитрием Бобровым, чтобы обсудить научное сотрудничество, выступление на мероприятии, получить экспертную поддержку, а также ознакомиться с материалами можно, выбрав любой удобный канал:</p>
     <div class="knopki" style="margin-top:26px"><a class="b ak" href="https://t.me/bobrovdmitriy" target="_blank" rel="noopener" aria-label="Telegram Дмитрия Боброва, откроется в новой вкладке">Telegram</a>
         <a class="b " href="https://vk.ru/dmitrybobrov1" target="_blank" rel="noopener" aria-label="VK Дмитрия Боброва, откроется в новой вкладке">VK</a>
         <a class="b " href="https://max.ru/join/fOqkqiDusU3hGIqZc2rFRjQWe0LAFePGLvWcIXuAhAk" target="_blank" rel="noopener" aria-label="MAX Дмитрия Боброва, откроется в новой вкладке">MAX</a>
         <a class="b " href="https://www.youtube.com/@DmitriBobrov" target="_blank" rel="noopener" aria-label="YouTube Дмитрия Боброва, откроется в новой вкладке">YouTube</a>
-        <a class="b " href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a></div>
+        <a class="b " href="https://vc.ru/dmitrybobrov" target="_blank" rel="noopener" aria-label="vc.ru Дмитрия Боброва, откроется в новой вкладке">vc.ru</a>
+        <a class="b " href="https://dzen.ru/id/6a8eacbfa22f2c2b921dac9c?share_to=link" target="_blank" rel="noopener" aria-label="Дзен Дмитрия Боброва, откроется в новой вкладке">Дзен</a></div>
     <footer class="podval">
       <div><p>Дмитрий Викторович Бобров</p><span>Директор Института социально-экономических наук РГГУ</span></div>
       <nav aria-label="Разделы">
-        <a href="#institute">Институт</a><a href="#science">Наука</a><a href="#experience">Проекты</a><a href="#expertise">Экспертиза</a><a href="#speaking">Выступления</a><a href="#biography">Биография</a><a href="#charity">Благотворительность</a><a href="#contacts">Контакты</a>
+        <a href="#institute">Институт</a><a href="#science">Наука</a><a href="#experience">Управление</a><a href="#expertise">Экспертиза</a><a href="#speaking">Выступления</a><a href="#biography">Биография</a><a href="#contacts">Контакты</a>
       </nav>
       <div class="meta"><span>© 2026 Персональный сайт</span><span>Не является официальным сайтом РГГУ.</span></div>
     </footer>
@@ -652,10 +655,11 @@ podval,.podval{display:grid;grid-template-columns:1.2fr 2fr 1.2fr;gap:28px;margi
 </main>
 
 <script>
-function pusk(){var e=document.getElementById('ekran');if(e.querySelector('iframe'))return;e.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/Z5o-Z06S4s0?autoplay=1&rel=0&playsinline=1" title="Почему одни растут, а другие боятся начать" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>'}
+function pusk(){var e=document.getElementById('ekran');if(e.querySelector('video'))return;e.innerHTML='<video controls autoplay playsinline preload="auto" poster="v/vizitka.jpg" src="v/vizitka.mp4" title="Видеовизитка Дмитрия Боброва"></video>';var v=e.querySelector('video');v.play().catch(function(){})}
 document.querySelectorAll('.ril').forEach(function(k){k.addEventListener('click',function(){
   if(k.classList.contains('idet'))return;
   document.querySelectorAll('.ril.idet video').forEach(function(v){v.pause()});
+  if(k.dataset.y){document.querySelectorAll('.ril.idet video').forEach(function(v){v.pause()});var ob0=k.querySelector('.ob');ob0.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+k.dataset.y+'?autoplay=1&rel=0&playsinline=1" title="'+k.getAttribute('aria-label')+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';k.classList.add('idet');return}
   var v=document.createElement('video');v.src=k.dataset.v;v.controls=true;v.playsInline=true;v.setAttribute('playsinline','');v.poster=k.querySelector('img').src;
   var ob=k.querySelector('.ob');ob.innerHTML='';ob.appendChild(v);k.classList.add('idet');v.play().catch(function(){});
 })});
